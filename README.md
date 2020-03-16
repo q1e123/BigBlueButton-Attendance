@@ -21,16 +21,22 @@ pipenv install
 ```
 ### Setup
 
-Make a config file, following the template. ** You need to modify just the right part of each line **
+Make a config file, following the template. **You need to modify just the right part of each line**
 
 #### Template
 
 spreadsheet = the type of spreadsheet (ex: xlsx) . If you don't need to use one put -
+
 spreadsheet_name = name of the spreadsheet file
+
 week = will be used to put the attendance (A + week)
+
 login = the login link of the platform
+
 user, pass = your credentials
+
 link = the link of the page that has the button to join a session
+
 output = name of the file that will contain current users
 
 #### Example
