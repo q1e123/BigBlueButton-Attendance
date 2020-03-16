@@ -1,4 +1,6 @@
 spreadsheet spreadsheet-type
+spreadsheet_name sheet-name
+week week-number
 login login-for-platform
 user your-user
 pass your-pass
