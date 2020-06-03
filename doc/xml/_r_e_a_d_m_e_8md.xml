@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="_r_e_a_d_m_e_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>BigBlueButton-Attendance</highlight></codeline>
+<codeline><highlight class="normal">Automatic<sp/>attendance<sp/>script<sp/>for<sp/>BigBlueButton</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Getting<sp/>Started</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">These<sp/>instructions<sp/>will<sp/>get<sp/>you<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>project<sp/>up<sp/>and<sp/>running.<sp/>To<sp/>see<sp/>how<sp/>to<sp/>run<sp/>the<sp/>program<sp/>read<sp/>the<sp/>Deployment<sp/>section.</highlight></codeline>
+<codeline><highlight class="normal">###<sp/>Prerequisites</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">*<sp/>Firefox<sp/>and<sp/>it&apos;s<sp/>gecko<sp/>(if<sp/>someone<sp/>needs<sp/>chrome<sp/>just<sp/>tell<sp/>me<sp/>and<sp/>I<sp/>will<sp/>update<sp/>it<sp/>to<sp/>be<sp/>able<sp/>to<sp/>use<sp/>chrome<sp/>too)</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>Python3</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>pipenv</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Installing</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">I<sp/>am<sp/>using<sp/>pipenv<sp/>for<sp/>packaging<sp/>so<sp/>just<sp/>use<sp/>the<sp/>pipenv<sp/>file.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">git<sp/>clone<sp/>https://github.com/q1e123/BigBlueButton-Attendance</highlight></codeline>
+<codeline><highlight class="normal">cd<sp/>BigBlueButton-Attendance</highlight></codeline>
+<codeline><highlight class="normal">pipenv<sp/>install</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">###<sp/>Setup</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Make<sp/>a<sp/>config<sp/>file,<sp/>following<sp/>the<sp/>template.<sp/>**You<sp/>need<sp/>to<sp/>modify<sp/>just<sp/>the<sp/>right<sp/>part<sp/>of<sp/>each<sp/>line**</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>Template</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">spreadsheet<sp/>=<sp/>the<sp/>type<sp/>of<sp/>spreadsheet<sp/>(ex:<sp/>xlsx)<sp/>.<sp/>If<sp/>you<sp/>don&apos;t<sp/>need<sp/>to<sp/>use<sp/>one<sp/>put<sp/>-</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">spreadsheet_name<sp/>=<sp/>name<sp/>of<sp/>the<sp/>spreadsheet<sp/>file</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">week<sp/>=<sp/>will<sp/>be<sp/>used<sp/>to<sp/>put<sp/>the<sp/>attendance<sp/>(A<sp/>+<sp/>week)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">login<sp/>=<sp/>the<sp/>login<sp/>link<sp/>of<sp/>the<sp/>platform</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">user,<sp/>pass<sp/>=<sp/>your<sp/>credentials</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">link<sp/>=<sp/>the<sp/>link<sp/>of<sp/>the<sp/>page<sp/>that<sp/>has<sp/>the<sp/>button<sp/>to<sp/>join<sp/>a<sp/>session</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">output<sp/>=<sp/>name<sp/>of<sp/>the<sp/>file<sp/>that<sp/>will<sp/>contain<sp/>current<sp/>users</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>Example</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">spreadsheet<sp/>xlsx</highlight></codeline>
+<codeline><highlight class="normal">spreadsheet_name<sp/>test.xlsx</highlight></codeline>
+<codeline><highlight class="normal">sheetname<sp/>Sheet1</highlight></codeline>
+<codeline><highlight class="normal">week<sp/>8</highlight></codeline>
+<codeline><highlight class="normal">login<sp/>https://example.com/login/index.php</highlight></codeline>
+<codeline><highlight class="normal">user<sp/>example@example.com</highlight></codeline>
+<codeline><highlight class="normal">pass<sp/>password</highlight></codeline>
+<codeline><highlight class="normal">link<sp/>https://example.com/mod/bigbluebuttonbn/view.php?id=12345</highlight></codeline>
+<codeline><highlight class="normal">output<sp/>users</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Deployment</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">pipenv<sp/>run<sp/>python3<sp/>main.py</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+    </programlisting>
+    <location file="/home/robert/Workshop/BigBlueButton-Attendance/README.md"/>
+  </compounddef>
+</doxygen>

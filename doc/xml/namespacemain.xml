@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespacemain" kind="namespace" language="Python">
+    <compoundname>main</compoundname>
+    <innerclass refid="classmain_1_1_engine" prot="public">main::Engine</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacemain_1af432943fbe343be68ed1ad5361669f51" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>main.e</definition>
+        <argsstring></argsstring>
+        <name>e</name>
+        <initializer>=  <ref refid="classmain_1_1_engine" kindref="compound">Engine</ref>(&apos;config&apos;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/robert/Workshop/BigBlueButton-Attendance/main.py" line="82" column="1" bodyfile="/home/robert/Workshop/BigBlueButton-Attendance/main.py" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Main file </para>
+    </detaileddescription>
+    <location file="/home/robert/Workshop/BigBlueButton-Attendance/main.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

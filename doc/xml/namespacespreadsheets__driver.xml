@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespacespreadsheets__driver" kind="namespace" language="Python">
+    <compoundname>spreadsheets_driver</compoundname>
+    <innerclass refid="classspreadsheets__driver_1_1_spread_sheet_driver" prot="public">spreadsheets_driver::SpreadSheetDriver</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/robert/Workshop/BigBlueButton-Attendance/spreadsheets_driver.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,228 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classdriver__ff_1_1_driver_firefox" kind="class" language="Python" prot="public">
+    <compoundname>driver_ff::DriverFirefox</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classdriver__ff_1_1_driver_firefox_1ae1bf0cc543455dceece590d46ba833a1" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>driver_ff.DriverFirefox::headless</definition>
+        <argsstring></argsstring>
+        <name>headless</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/robert/Workshop/BigBlueButton-Attendance/driver_ff.py" line="8" column="1" bodyfile="/home/robert/Workshop/BigBlueButton-Attendance/driver_ff.py" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classdriver__ff_1_1_driver_firefox_1a8e37b1be9387c11328080320baf41bc4" prot="public" static="no" mutable="no">
+        <type></type>
+        <definition>driver_ff.DriverFirefox::driver</definition>
+        <argsstring></argsstring>
+        <name>driver</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/robert/Workshop/BigBlueButton-Attendance/driver_ff.py" line="13" column="1" bodyfile="/home/robert/Workshop/BigBlueButton-Attendance/driver_ff.py" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdriver__ff_1_1_driver_firefox_1a5f1cbcf7df1d8bbb4b68bb23840f5adb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def driver_ff.DriverFirefox.__init__</definition>
+        <argsstring>(self, headless=False)</argsstring>
+        <name>__init__</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>headless</type>
+          <defname>headless</defname>
+          <defval>False</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/robert/Workshop/BigBlueButton-Attendance/driver_ff.py" line="7" column="1" bodyfile="/home/robert/Workshop/BigBlueButton-Attendance/driver_ff.py" bodystart="7" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classdriver__ff_1_1_driver_firefox_1acc541d41c565780b6b7487871ca141f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def driver_ff.DriverFirefox.goto</definition>
+        <argsstring>(self, site)</argsstring>
+        <name>goto</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>site</type>
+          <defname>site</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/robert/Workshop/BigBlueButton-Attendance/driver_ff.py" line="16" column="1" bodyfile="/home/robert/Workshop/BigBlueButton-Attendance/driver_ff.py" bodystart="16" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classdriver__ff_1_1_driver_firefox_1a5be7b3fb7438cb290952a4b3965761de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def driver_ff.DriverFirefox.click</definition>
+        <argsstring>(self, xpath)</argsstring>
+        <name>click</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>xpath</type>
+          <defname>xpath</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/robert/Workshop/BigBlueButton-Attendance/driver_ff.py" line="19" column="1" bodyfile="/home/robert/Workshop/BigBlueButton-Attendance/driver_ff.py" bodystart="19" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classdriver__ff_1_1_driver_firefox_1a7a6670bb863e95b332ad152c5ac62171" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def driver_ff.DriverFirefox.send_keys</definition>
+        <argsstring>(self, xpath, keys)</argsstring>
+        <name>send_keys</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>xpath</type>
+          <defname>xpath</defname>
+        </param>
+        <param>
+          <type>keys</type>
+          <defname>keys</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/robert/Workshop/BigBlueButton-Attendance/driver_ff.py" line="23" column="1" bodyfile="/home/robert/Workshop/BigBlueButton-Attendance/driver_ff.py" bodystart="23" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classdriver__ff_1_1_driver_firefox_1aaf3893dbe9c2e136db87616322582baa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def driver_ff.DriverFirefox.get_value</definition>
+        <argsstring>(self, xpath, attribute)</argsstring>
+        <name>get_value</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>xpath</type>
+          <defname>xpath</defname>
+        </param>
+        <param>
+          <type>attribute</type>
+          <defname>attribute</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/robert/Workshop/BigBlueButton-Attendance/driver_ff.py" line="27" column="1" bodyfile="/home/robert/Workshop/BigBlueButton-Attendance/driver_ff.py" bodystart="27" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classdriver__ff_1_1_driver_firefox_1a39405491664dfd6a8bae4cd07ddf84b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def driver_ff.DriverFirefox.is_selected</definition>
+        <argsstring>(self, xpath)</argsstring>
+        <name>is_selected</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>xpath</type>
+          <defname>xpath</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/robert/Workshop/BigBlueButton-Attendance/driver_ff.py" line="31" column="1" bodyfile="/home/robert/Workshop/BigBlueButton-Attendance/driver_ff.py" bodystart="31" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="classdriver__ff_1_1_driver_firefox_1a93b9348e0243e4329abf972f8ec6911f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def driver_ff.DriverFirefox.refresh</definition>
+        <argsstring>(self)</argsstring>
+        <name>refresh</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/robert/Workshop/BigBlueButton-Attendance/driver_ff.py" line="35" column="1" bodyfile="/home/robert/Workshop/BigBlueButton-Attendance/driver_ff.py" bodystart="35" bodyend="37"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classdriver__ff_1_1_driver_firefox_1ab65496728e657c04f6e3ff219625f0de" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>def</type>
+        <definition>def driver_ff.DriverFirefox._find</definition>
+        <argsstring>(self, xpath)</argsstring>
+        <name>_find</name>
+        <param>
+          <type>self</type>
+          <defname>self</defname>
+        </param>
+        <param>
+          <type>xpath</type>
+          <defname>xpath</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/robert/Workshop/BigBlueButton-Attendance/driver_ff.py" line="38" column="1" bodyfile="/home/robert/Workshop/BigBlueButton-Attendance/driver_ff.py" bodystart="38" bodyend="40"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/robert/Workshop/BigBlueButton-Attendance/driver_ff.py" line="6" column="1" bodyfile="/home/robert/Workshop/BigBlueButton-Attendance/driver_ff.py" bodystart="6" bodyend="40"/>
+    <listofallmembers>
+      <member refid="classdriver__ff_1_1_driver_firefox_1a5f1cbcf7df1d8bbb4b68bb23840f5adb" prot="public" virt="non-virtual"><scope>driver_ff::DriverFirefox</scope><name>__init__</name></member>
+      <member refid="classdriver__ff_1_1_driver_firefox_1ab65496728e657c04f6e3ff219625f0de" prot="private" virt="non-virtual"><scope>driver_ff::DriverFirefox</scope><name>_find</name></member>
+      <member refid="classdriver__ff_1_1_driver_firefox_1a5be7b3fb7438cb290952a4b3965761de" prot="public" virt="non-virtual"><scope>driver_ff::DriverFirefox</scope><name>click</name></member>
+      <member refid="classdriver__ff_1_1_driver_firefox_1a8e37b1be9387c11328080320baf41bc4" prot="public" virt="non-virtual"><scope>driver_ff::DriverFirefox</scope><name>driver</name></member>
+      <member refid="classdriver__ff_1_1_driver_firefox_1aaf3893dbe9c2e136db87616322582baa" prot="public" virt="non-virtual"><scope>driver_ff::DriverFirefox</scope><name>get_value</name></member>
+      <member refid="classdriver__ff_1_1_driver_firefox_1acc541d41c565780b6b7487871ca141f0" prot="public" virt="non-virtual"><scope>driver_ff::DriverFirefox</scope><name>goto</name></member>
+      <member refid="classdriver__ff_1_1_driver_firefox_1ae1bf0cc543455dceece590d46ba833a1" prot="public" virt="non-virtual"><scope>driver_ff::DriverFirefox</scope><name>headless</name></member>
+      <member refid="classdriver__ff_1_1_driver_firefox_1a39405491664dfd6a8bae4cd07ddf84b9" prot="public" virt="non-virtual"><scope>driver_ff::DriverFirefox</scope><name>is_selected</name></member>
+      <member refid="classdriver__ff_1_1_driver_firefox_1a93b9348e0243e4329abf972f8ec6911f" prot="public" virt="non-virtual"><scope>driver_ff::DriverFirefox</scope><name>refresh</name></member>
+      <member refid="classdriver__ff_1_1_driver_firefox_1a7a6670bb863e95b332ad152c5ac62171" prot="public" virt="non-virtual"><scope>driver_ff::DriverFirefox</scope><name>send_keys</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

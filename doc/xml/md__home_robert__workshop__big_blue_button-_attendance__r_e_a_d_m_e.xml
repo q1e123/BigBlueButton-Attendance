@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="md__home_robert__workshop__big_blue_button-_attendance__r_e_a_d_m_e" kind="page">
+    <compoundname>md__home_robert_Workshop_BigBlueButton-Attendance_README</compoundname>
+    <title>BigBlueButton-Attendance</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Automatic attendance script for BigBlueButton</para>
+<sect1 id="md__home_robert__workshop__big_blue_button-_attendance__r_e_a_d_m_e_1autotoc_md1">
+<title>Getting Started</title>
+<para>These instructions will get you a copy of the project up and running. To see how to run the program read the Deployment section. </para>
+<sect2 id="md__home_robert__workshop__big_blue_button-_attendance__r_e_a_d_m_e_1autotoc_md2">
+<title>Prerequisites</title>
+<para><itemizedlist>
+<listitem><para>Firefox and it&apos;s gecko (if someone needs chrome just tell me and I will update it to be able to use chrome too)</para>
+</listitem><listitem><para>Python3</para>
+</listitem><listitem><para>pipenv</para>
+</listitem></itemizedlist>
+</para>
+</sect2>
+<sect2 id="md__home_robert__workshop__big_blue_button-_attendance__r_e_a_d_m_e_1autotoc_md3">
+<title>Installing</title>
+<para>I am using pipenv for packaging so just use the pipenv file.</para>
+<para><programlisting><codeline><highlight class="normal">git<sp/>clone<sp/>https://github.com/q1e123/BigBlueButton-Attendance</highlight></codeline>
+<codeline><highlight class="normal">cd<sp/>BigBlueButton-Attendance</highlight></codeline>
+<codeline><highlight class="normal">pipenv<sp/>install</highlight></codeline>
+</programlisting></para>
+</sect2>
+<sect2 id="md__home_robert__workshop__big_blue_button-_attendance__r_e_a_d_m_e_1autotoc_md4">
+<title>Setup</title>
+<para>Make a config file, following the template. <bold>You need to modify just the right part of each line</bold></para>
+<sect3 id="md__home_robert__workshop__big_blue_button-_attendance__r_e_a_d_m_e_1autotoc_md5">
+<title>Template</title>
+<para>spreadsheet = the type of spreadsheet (ex: xlsx) . If you don&apos;t need to use one put -</para>
+<para>spreadsheet_name = name of the spreadsheet file</para>
+<para>week = will be used to put the attendance (A + week)</para>
+<para>login = the login link of the platform</para>
+<para>user, pass = your credentials</para>
+<para>link = the link of the page that has the button to join a session</para>
+<para>output = name of the file that will contain current users</para>
+</sect3>
+<sect3 id="md__home_robert__workshop__big_blue_button-_attendance__r_e_a_d_m_e_1autotoc_md6">
+<title>Example</title>
+<para><programlisting><codeline><highlight class="normal">spreadsheet<sp/>xlsx</highlight></codeline>
+<codeline><highlight class="normal">spreadsheet_name<sp/>test.xlsx</highlight></codeline>
+<codeline><highlight class="normal">sheetname<sp/>Sheet1</highlight></codeline>
+<codeline><highlight class="normal">week<sp/>8</highlight></codeline>
+<codeline><highlight class="normal">login<sp/>https://example.com/login/index.php</highlight></codeline>
+<codeline><highlight class="normal">user<sp/>example@example.com</highlight></codeline>
+<codeline><highlight class="normal">pass<sp/>password</highlight></codeline>
+<codeline><highlight class="normal">link<sp/>https://example.com/mod/bigbluebuttonbn/view.php?id=12345</highlight></codeline>
+<codeline><highlight class="normal">output<sp/>users</highlight></codeline>
+</programlisting></para>
+</sect3>
+</sect2>
+</sect1>
+<sect1 id="md__home_robert__workshop__big_blue_button-_attendance__r_e_a_d_m_e_1autotoc_md7">
+<title>Deployment</title>
+<para><programlisting><codeline><highlight class="normal">pipenv<sp/>run<sp/>python3<sp/>main.py</highlight></codeline>
+</programlisting> </para>
+</sect1>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

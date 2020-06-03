@@ -1,0 +1,65 @@
+.TH "md__home_robert__workshop__big_blue_button-_attendance__r_e_a_d_m_e" 3 "Tue Jun 2 2020" "Version 1.0" "BigBlueButton-Attendance" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+md__home_robert__workshop__big_blue_button-_attendance__r_e_a_d_m_e \- BigBlueButton-Attendance 
+Automatic attendance script for BigBlueButton
+.SH "Getting Started"
+.PP
+These instructions will get you a copy of the project up and running\&. To see how to run the program read the Deployment section\&. 
+.SS "Prerequisites"
+.IP "\(bu" 2
+Firefox and it's gecko (if someone needs chrome just tell me and I will update it to be able to use chrome too)
+.IP "\(bu" 2
+Python3
+.IP "\(bu" 2
+pipenv
+.PP
+.SS "Installing"
+I am using pipenv for packaging so just use the pipenv file\&.
+.PP
+.PP
+.nf
+git clone https://github\&.com/q1e123/BigBlueButton-Attendance
+cd BigBlueButton-Attendance
+pipenv install
+.fi
+.PP
+.SS "Setup"
+Make a config file, following the template\&. \fBYou need to modify just the right part of each line\fP
+.SS "Template"
+spreadsheet = the type of spreadsheet (ex: xlsx) \&. If you don't need to use one put -
+.PP
+spreadsheet_name = name of the spreadsheet file
+.PP
+week = will be used to put the attendance (A + week)
+.PP
+login = the login link of the platform
+.PP
+user, pass = your credentials
+.PP
+link = the link of the page that has the button to join a session
+.PP
+output = name of the file that will contain current users
+.SS "Example"
+.PP
+.nf
+spreadsheet xlsx
+spreadsheet_name test\&.xlsx
+sheetname Sheet1
+week 8
+login https://example\&.com/login/index\&.php
+user example@example\&.com
+pass password
+link https://example\&.com/mod/bigbluebuttonbn/view\&.php?id=12345
+output users
+.fi
+.PP
+.SH "Deployment"
+.PP
+.PP
+.nf
+pipenv run python3 main\&.py
+.fi
+.PP
+ 

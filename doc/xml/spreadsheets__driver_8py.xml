@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="spreadsheets__driver_8py" kind="file" language="Python">
+    <compoundname>spreadsheets_driver.py</compoundname>
+    <innerclass refid="classspreadsheets__driver_1_1_spread_sheet_driver" prot="public">spreadsheets_driver::SpreadSheetDriver</innerclass>
+    <innernamespace refid="namespacespreadsheets__driver">spreadsheets_driver</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">from</highlight><highlight class="normal"><sp/>openpyxl<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>load_workbook</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="classspreadsheets__driver_1_1_spread_sheet_driver" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classspreadsheets__driver_1_1_spread_sheet_driver" kindref="compound">SpreadSheetDriver</ref>():</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">__init__(self,spread_sheet_type,<sp/>file_name,sheet_name):</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classspreadsheets__driver_1_1_spread_sheet_driver_1aef0a7464586ace82c56ddf94afa7012d" kindref="member">file_name</ref><sp/>=<sp/>file_name</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classspreadsheets__driver_1_1_spread_sheet_driver_1ad3b2c28d22a07ae81509048c25dc2a10" kindref="member">wb</ref><sp/>=<sp/>load_workbook(file_name)</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classspreadsheets__driver_1_1_spread_sheet_driver_1ae40f2b6654b509ecd69dbf4137b1c7dc" kindref="member">ws</ref><sp/>=<sp/>self.<ref refid="classspreadsheets__driver_1_1_spread_sheet_driver_1ad3b2c28d22a07ae81509048c25dc2a10" kindref="member">wb</ref>.get_sheet_by_name(sheet_name)</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">save(self):</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classspreadsheets__driver_1_1_spread_sheet_driver_1ad3b2c28d22a07ae81509048c25dc2a10" kindref="member">wb</ref>.save(self.<ref refid="classspreadsheets__driver_1_1_spread_sheet_driver_1aef0a7464586ace82c56ddf94afa7012d" kindref="member">file_name</ref>)</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">read(self,row,col):</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>row<sp/>=<sp/>str(row)</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>self.<ref refid="classspreadsheets__driver_1_1_spread_sheet_driver_1ae40f2b6654b509ecd69dbf4137b1c7dc" kindref="member">ws</ref>[col+row].value</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">write(self,row,col,value):</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>row<sp/>=<sp/>str(row)</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classspreadsheets__driver_1_1_spread_sheet_driver_1ae40f2b6654b509ecd69dbf4137b1c7dc" kindref="member">ws</ref>[col+row]<sp/>=<sp/>value</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">get_row(self,value,col):</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>i<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/>range(1,self.<ref refid="classspreadsheets__driver_1_1_spread_sheet_driver_1ae40f2b6654b509ecd69dbf4137b1c7dc" kindref="member">ws</ref>.max_row+1):</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>self.<ref refid="classspreadsheets__driver_1_1_spread_sheet_driver_1a3562e10ad4faa12955b99228a83b0a43" kindref="member">read</ref>(i,col)<sp/>==<sp/>value:</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>i</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/robert/Workshop/BigBlueButton-Attendance/spreadsheets_driver.py"/>
+  </compounddef>
+</doxygen>

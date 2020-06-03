@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="namespacedriver__ff" kind="namespace" language="Python">
+    <compoundname>driver_ff</compoundname>
+    <innerclass refid="classdriver__ff_1_1_driver_firefox" prot="public">driver_ff::DriverFirefox</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/robert/Workshop/BigBlueButton-Attendance/driver_ff.py" line="1" column="1"/>
+  </compounddef>
+</doxygen>

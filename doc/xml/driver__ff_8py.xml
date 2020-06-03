@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="driver__ff_8py" kind="file" language="Python">
+    <compoundname>driver_ff.py</compoundname>
+    <innerclass refid="classdriver__ff_1_1_driver_firefox" prot="public">driver_ff::DriverFirefox</innerclass>
+    <innernamespace refid="namespacedriver__ff">driver_ff</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">from</highlight><highlight class="normal"><sp/>selenium<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>webdriver</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>selenium.webdriver.firefox.options<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Options</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">from</highlight><highlight class="normal"><sp/>selenium.webdriver.common.keys<sp/></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>Keys</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="classdriver__ff_1_1_driver_firefox" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classdriver__ff_1_1_driver_firefox" kindref="compound">DriverFirefox</ref>:</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">__init__(self,<sp/>headless=False):</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classdriver__ff_1_1_driver_firefox_1ae1bf0cc543455dceece590d46ba833a1" kindref="member">headless</ref><sp/>=<sp/>headless</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>options<sp/>=<sp/>Options()</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>options.set_preference(</highlight><highlight class="stringliteral">&quot;browser.link.open_newwindow&quot;</highlight><highlight class="normal">,<sp/>1)</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>profile<sp/>=<sp/>webdriver.FirefoxProfile()</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>options.headless<sp/>=<sp/>headless</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classdriver__ff_1_1_driver_firefox_1a8e37b1be9387c11328080320baf41bc4" kindref="member">driver</ref><sp/>=<sp/>webdriver.Firefox(</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>options=options,<sp/>firefox_profile=profile)</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">goto(self,<sp/>site):</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classdriver__ff_1_1_driver_firefox_1a8e37b1be9387c11328080320baf41bc4" kindref="member">driver</ref>.get(site)</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">click(self,<sp/>xpath):</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>elem<sp/>=<sp/>self.<ref refid="classdriver__ff_1_1_driver_firefox_1ab65496728e657c04f6e3ff219625f0de" kindref="member">_find</ref>(xpath)</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>elem.click()</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">send_keys(self,<sp/>xpath,<sp/>keys):</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>elem<sp/>=<sp/>self.<ref refid="classdriver__ff_1_1_driver_firefox_1ab65496728e657c04f6e3ff219625f0de" kindref="member">_find</ref>(xpath)</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>elem.send_keys(keys)</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">get_value(self,<sp/>xpath,<sp/>attribute):</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>elem<sp/>=<sp/>self.<ref refid="classdriver__ff_1_1_driver_firefox_1ab65496728e657c04f6e3ff219625f0de" kindref="member">_find</ref>(xpath)</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>elem.get_attribute(attribute)</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">is_selected(self,<sp/>xpath):</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>elem<sp/>=<sp/>self.<ref refid="classdriver__ff_1_1_driver_firefox_1ab65496728e657c04f6e3ff219625f0de" kindref="member">_find</ref>(xpath)</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>elem.is_selected()</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">refresh(self):</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>self.<ref refid="classdriver__ff_1_1_driver_firefox_1a8e37b1be9387c11328080320baf41bc4" kindref="member">driver</ref>.refresh()</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">def<sp/></highlight><highlight class="normal">_find(self,<sp/>xpath):</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>self.<ref refid="classdriver__ff_1_1_driver_firefox_1a8e37b1be9387c11328080320baf41bc4" kindref="member">driver</ref>.find_element_by_xpath(xpath)</highlight></codeline>
+    </programlisting>
+    <location file="/home/robert/Workshop/BigBlueButton-Attendance/driver_ff.py"/>
+  </compounddef>
+</doxygen>
