@@ -68,7 +68,7 @@ class Engine:
 
         for user in self.users:
             i = ss_driver.get_row(user[:-1],'A')
-            j = chr(ord('A') + self.settings['week'])
+            j = chr(ord('A') + int(self.settings['week']))
             ss_driver.write(i,j,'1')
         
         ss_driver.save()

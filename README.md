@@ -23,6 +23,8 @@ pipenv install
 
 Make a config file, following the template. **You need to modify just the right part of each line**
 
+Before using this script, the spreadsheet needs to have on the first column (A) all student names.
+
 #### Template
 
 spreadsheet = the type of spreadsheet (ex: xlsx) . If you don't need to use one put -
